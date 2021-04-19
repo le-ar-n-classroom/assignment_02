@@ -1,40 +1,31 @@
-"""Assignment:
-
-1a Given two vectors, use the cross product to create a set of three orthonormal vectors.
-1b Use the cross product to compute the area of a convex, 2D polygon.
-1c Define a function for computing the cross products of two same-length arrays of vectors by
-    a. Prototype in pure Python (loop over the arrays).
-    b. Make Numpy equivalent without loops.
+"""
+1b. Use the cross product to compute the area of a convex, 2D polygon with more than 3 sides.
 """
 
-# 1b. Use the cross product to compute the area of a convex, 2D polygon from the following set of points, 
-# and compare your result with using the compas function area_triangle.
-
 from compas.geometry import Vector
-from compas.geometry import area_triangle
+from compas.geometry import area_polygon
 
-a = [0.0, 0.0, 0.0]
-b = [1.0, 0.0, 0.0]
-c = [0.0, 1.0, 0.0]
+#Input points
+a = #...
+b = #...
+c = #...
+# additional points
+polygon = [a,b,c] # add additional points here
 
-ab = Vector.from_start_end(a, b) #Vector1
-ac = Vector.from_start_end(a, c) #Vector2
+ab = #Vector1
+ac = #Vector2
+# additional vectors
 
-#compute the cross product using the Vector function cross cp = a.cross(b)
-x = #...
+#Calculate area
+A = #Area
 
-#take te length of the vector
-L = #...
+# Display area
+print(A)
 
-#and divide L by 2
-A1 = #...
-print(A1)
-
-#now compute the area by using the area_triangle function of compas
-A2 = #...
+# Area as computed by the area_polygon function of compas
+A2 = area_polygon(polygon)
 print(A2)
-
 #and check your result
-print(A1 == A2)
+print("Area correct:", A == A2)
 
 
