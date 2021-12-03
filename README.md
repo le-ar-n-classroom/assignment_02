@@ -6,11 +6,9 @@ Fill in the missing code in the [Python files](https://github.com/augmentedfabri
 
 * 1a: Given two vectors, use the cross product to create a set of three orthonormal vectors.
 
-* 1b: Use the cross product to compute the area of a convex, 2D polygon.
+* 1b. Use the cross product to compute the area of a convex, 2D polygon with more than 3 sides.
 
-* 1c: Define a function for computing the cross products of two same-length arrays of vectors by
-    * Prototype in pure Python (loop over the arrays).
-    * Make Numpy equivalent without loops.
+* 1c: Define a function for computing the cross products of two same-length lists of vectors
 
 ## 2 - Recursive Functions
 
